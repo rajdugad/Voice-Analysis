@@ -55,7 +55,7 @@ def classify_audio_clip(clip):
 
 def lstm_a(audio_file_path):
     # Load your trained model
-    model_path = r"models\audio_lstm.h5"
+    model_path = r"models\hybrid_model.h5"
     model = load_model(model_path)
     # Genre mapping (update this according to your dataset)
     genre_mapping = {0: "Spoof", 1: "Real"}

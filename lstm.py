@@ -39,7 +39,7 @@ def predict_genre(model, audio_file_path, genre_mapping):
     return genre_label
 
 # Load your trained model
-model_path = r"models\audio_lstm.h5"
+model_path = r"models\hybrid_model.h5"
 model = load_model(model_path)
 
 # Path to the audio file you want to predict
@@ -51,6 +51,6 @@ genre_mapping = {0: "spoof", 1: "real"}
 
 # Make the prediction
 predicted_genre = predict_genre(model, audio_file_path, genre_mapping)
-# print("Predicted genre:", predicted_genre)
+print("Predicted genre:", predicted_genre)
 
 
